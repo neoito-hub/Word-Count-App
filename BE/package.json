@@ -1,0 +1,28 @@
+{
+  "name": "word-freq",
+  "version": "1.0.0",
+  "description": "word-freq",
+  "main": "index.js",
+  "scripts": {
+    "start": "node --experimental-modules server/_core/app.mjs"
+  },
+  "author": "Jishnu",
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "config": "^3.1.0",
+    "cors": "^2.8.5",
+    "express": "^4.16.4",
+    "mongoose": "^5.5.5"
+  },
+  "devDependencies": {
+    "babel-cli": "^6.18.0",
+    "babel-plugin-transform-runtime": "^6.23.0",
+    "babel-preset-es2015": "^6.24.1",
+    "babel-preset-latest": "^6.16.0",
+    "babel-preset-stage-2": "^6.24.1",
+    "babel-root-import": "^4.1.5",
+    "babel-watch": "^2.0.7",
+    "eslint": "^3.15.0",
+    "eslint-config-google": "^0.7.1"
+  }
+}

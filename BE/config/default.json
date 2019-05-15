@@ -1,0 +1,4 @@
+{
+  "db": "mongodb://localhost/word_freq",
+  "port": 3000
+}
