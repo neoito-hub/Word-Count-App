@@ -1,35 +1,15 @@
-## Have mongodb running!
+### Word Count App
 
-### To run
+![Word Count App screenshot](src/assets/word-count-preview.png?raw=true "Word Count App")
 
-```
-$ npm i
-$ npm run dev
-$ #or
-$ npm start
-```
+Takes in as input a sentence and then pass it to server and returns the count of the words
 
-### POST
+## To Run
 
-Endpoint: `localhost:3000/freq`
+First run the [backend](https://github.com/neoito-hub/word-count-backend)
 
-Body:
+Clone this repo
 
-```
-{
-  "string": "I love it so so"
-}
-```
+`npm i`
 
-### GET
-
-Endpoint: `localhost:3000/ping`
-
-### GET
-
-Endpoint: `localhost:3000/user`
-Header: `user_id: dwefdewfewfwr`
-
-### POST
-
-Endpoint: `localhost:300/user`
+`ng serve`

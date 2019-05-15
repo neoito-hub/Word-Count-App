@@ -1,0 +1,22 @@
+<div class="app-container">
+  <h1>Word Count App</h1>
+  <div class="word-table-container">
+    <form #f="ngForm" (ngSubmit)="onSubmit()" novalidate>
+      <input
+        name="text"
+        [(ngModel)]="text"
+        placeholder="Type in sentence"
+        autocomplete="off"
+      />
+      <button type="submit">Submit</button>
+    </form>
+    <div class="words-list">
+      <div *ngFor="let w of wordsList">
+        <div class="word-div">
+          <span class="word">{{ w.word }} </span>
+          <span class="count">{{ w.count }}</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,76 @@
+$buttonColor: #26afff;
+
+.app-container {
+  padding: 1% 10%;
+  h1 {
+    font-family: fantasy;
+  }
+  .word-table-container {
+    // text-align: center;
+    border: 1px solid #ddd;
+    padding: 15px;
+    form {
+      padding: 12px 0;
+      border-bottom: 1px dashed #ddd;
+
+      input {
+        width: 82%;
+        height: 30px;
+        padding: 0 10px;
+        border: none;
+        outline: none;
+        font-size: 20px;
+        border-bottom: 1px solid #ddd;
+        &:active,
+        &:focus {
+          border-bottom: 1px solid $buttonColor;
+        }
+      }
+      button[type="submit"] {
+        width: 14%;
+        background: transparent;
+        border-radius: 4px;
+        will-change: transform;
+        transition: all 0.2s ease;
+        border: 2px solid $buttonColor;
+        cursor: pointer;
+        color: #ffffff;
+        font-size: 16px;
+        color: $buttonColor;
+        outline: none;
+        text-align: center;
+
+        &:hover {
+          background: $buttonColor;
+          color: #ffffff;
+        }
+      }
+    }
+    .words-list {
+      display: flex;
+      flex-wrap: wrap;
+      margin: 20px 1px;
+      div {
+        width: 25%;
+        font-size: 19px;
+        padding: 10px 0;
+        display: flex;
+        .word-div {
+          margin: 10;
+          .word {
+            color: #0e0e0e;
+          }
+          .count {
+            color: #ffffff;
+            border-radius: 50%;
+            position: relative;
+            font-size: 15px;
+            background: $buttonColor;
+            padding: 2px 7px;
+            bottom: 11px;
+          }
+        }
+      }
+    }
+  }
+}
